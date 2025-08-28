@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Read(C:\\Users\\MariosNikolopoulos\\Downloads/**)",
+      "Bash(npm run build:electron:*)",
+      "Read(C:\\Users\\MariosNikolopoulos\\Downloads\\9ceefed8b10579bbb880093cf216bfaaf27cb6ce\\LoL_Logo_Icon_Package\\LoL_Icon_Rendered/**)",
+      "Bash(copy:*)",
+      "Bash(npx png-to-ico:*)",
+      "Bash(node:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
