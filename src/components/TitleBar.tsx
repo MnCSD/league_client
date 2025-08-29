@@ -103,72 +103,72 @@ export default function TitleBar() {
             PLAY
           </span>
         </button>
+
+        {/* Navigation Links */}
+        <div className="flex items-center ml-8 gap-6">
+          <a
+            href="#"
+            className="font-semibold text-sm hover:text-yellow-400 transition-colors"
+            style={
+              {
+                fontFamily: "BeaufortforLOL, sans-serif",
+                color: "#CDBF91",
+                WebkitAppRegion: "no-drag",
+              } as React.CSSProperties
+            }
+          >
+            HOME
+          </a>
+          <a
+            href="#"
+            className="font-semibold text-sm hover:text-yellow-400 transition-colors"
+            style={
+              {
+                fontFamily: "BeaufortforLOL, sans-serif",
+                WebkitAppRegion: "no-drag",
+                color: "#CDBF91",
+              } as React.CSSProperties
+            }
+          >
+            PROFILE
+          </a>
+          <a
+            href="#"
+            className="font-semibold text-sm hover:text-yellow-400 transition-colors"
+            style={
+              {
+                fontFamily: "BeaufortforLOL, sans-serif",
+                WebkitAppRegion: "no-drag",
+                color: "#CDBF91",
+              } as React.CSSProperties
+            }
+          >
+            COLLECTION
+          </a>
+        </div>
       </div>
 
+      {/* Right Side - Icons */}
       <div
-        className="flex"
-        style={{ WebkitAppRegion: "drag" } as React.CSSProperties}
+        className="flex items-center gap-6 pr-6"
+        style={{ WebkitAppRegion: "no-drag" } as React.CSSProperties}
       >
-        <button
-          onClick={handleMinimize}
-          className="w-12 h-12 flex items-center justify-center text-gray-400 hover:text-white transition-colors duration-200"
-        >
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <path
-              d="M3 7h8"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            />
-          </svg>
+        {/* Navigation Icons */}
+        <button className="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+          <img src="/nav-icon-profile.svg" alt="Profile" className="w-6 h-6" />
         </button>
-
-        <button
-          onClick={handleMaximize}
-          className="w-12 h-12 flex items-center justify-center text-gray-400 hover:text-white transition-colors duration-200"
-        >
-          {isMaximized ? (
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path
-                d="M3.5 3.5h7v7h-7v-7z"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                fill="none"
-              />
-              <path
-                d="M5.5 5.5V2h7v7h-1.5"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                fill="none"
-              />
-            </svg>
-          ) : (
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <rect
-                x="2"
-                y="2"
-                width="10"
-                height="10"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                fill="none"
-              />
-            </svg>
-          )}
+        <button className="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+          <img
+            src="/nav-icon-collections.svg"
+            alt="Collections"
+            className="w-6 h-6"
+          />
         </button>
-
-        <button
-          onClick={handleClose}
-          className="w-12 h-12 flex items-center justify-center text-gray-400 transition-colors duration-200"
-        >
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <path
-              d="M3.5 3.5l7 7M10.5 3.5l-7 7"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-            />
-          </svg>
+        <button className="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+          <img src="/nav-icon-loot.svg" alt="Loot" className="w-6 h-6" />
+        </button>
+        <button className="w-8 h-8 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+          <img src="/nav-icon-store.svg" alt="Store" className="w-6 h-6" />
         </button>
       </div>
     </div>
