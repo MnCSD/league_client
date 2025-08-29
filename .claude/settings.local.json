@@ -7,7 +7,10 @@
       "Read(C:\\Users\\MariosNikolopoulos\\Downloads\\9ceefed8b10579bbb880093cf216bfaaf27cb6ce\\LoL_Logo_Icon_Package\\LoL_Icon_Rendered/**)",
       "Bash(copy:*)",
       "Bash(npx png-to-ico:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(cp:*)",
+      "Read(C:\\Users\\MariosNikolopoulos\\Pictures\\Screenshots/**)",
+      "Read(C:\\Users\\MariosNikolopoulos\\Downloads\\cc904f8076c86dd5b0c198573f8fbfd302ec3134/**)"
     ],
     "deny": [],
     "ask": []
